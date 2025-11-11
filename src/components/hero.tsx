@@ -11,9 +11,9 @@ export default function Hero() {
 
   return (
     <section className="relative w-full h-screen pt-16 overflow-hidden bg-background flex items-center justify-center">
-      <div className="grid grid-cols-1 md:grid-cols-2 w-full h-full">
+      <div className="flex flex-col-reverse md:grid md:grid-cols-2 w-full h-full">
         {/* Image Section */}
-        <div className="relative h-full w-full animate-scale-in">
+        <div className="relative h-1/2 md:h-full w-full animate-scale-in">
           <Image
             src="/assets/Mustakim-Headshot.jpg"
             alt="Mustakim Portrait"
@@ -25,7 +25,7 @@ export default function Hero() {
         </div>
 
         {/* Text Section */}
-        <div className="flex flex-col justify-center px-6 sm:px-8 lg:px-12 py-12 sm:py-0 animate-slide-in-right">
+        <div className="flex flex-col justify-center px-6 sm:px-8 lg:px-12 py-6 md:py-12 sm:md:py-0 animate-slide-in-right h-1/2 md:h-full">
           <div className="space-y-6">
             <div className="space-y-2">
               <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground font-medium">
